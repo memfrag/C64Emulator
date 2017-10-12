@@ -31,9 +31,7 @@ class TVEmulatorViewController: GCEventViewController, VICEApplicationProtocol {
         
         setUpGameControllers()
 
-        dataFileURLString = Bundle.main.path(forResource: "Games/twister3", ofType: "prg") ?? ""
-        //dataFileURLString = Bundle.main.path(forResource: "Games/Commando", ofType: "d64") ?? ""
-        //dataFileURLString = Bundle.main.path(forResource: "Games/Super Cycle", ofType: "d64") ?? ""
+        dataFileURLString = Bundle.main.path(forResource: "Games/Commando", ofType: "d64") ?? ""
         startVICEThread(files:[dataFileURLString], autostart: true)
     }
 
