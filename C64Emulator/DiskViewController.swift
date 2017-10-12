@@ -113,7 +113,7 @@ class DiskViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    //MARK: UITableViewDataSource
+    // MARK: - UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
         if viewTypeSeg.selectedSegmentIndex == 0 {
@@ -211,7 +211,7 @@ class DiskViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    //MARK: UITableViewDelegate
+    // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

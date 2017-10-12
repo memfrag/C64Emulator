@@ -154,7 +154,7 @@ static void sAudioQueueOutputCallback(void* inUserData, AudioQueueRef inAQ, Audi
 }
 
 
-
+#if TARGET_OS_IOS
 static void sAudioSessionInterruptionCallback(void* inClientData, UInt32 inInterruptionState)
 {
     if (inInterruptionState == kAudioSessionBeginInterruption)
@@ -199,6 +199,7 @@ static void sAudioQueuePropertyChangeCallback(void* inUserData, AudioQueueRef in
 {
 	fprintf(stderr, "FIXME: handle audio queue property change\n");
 }
+#endif
 
 
 static int audioqueue_resume(void);
@@ -223,6 +224,7 @@ static int audioqueue_init(const char *param, int *speed, int *fragsize, int *fr
     // register with AudioSession API (iPhone OS 2.1 or later)
     OSStatus err = 0;
     
+#if TARGET_OS_IOS
     if (!sAudioSessionInitialized)
     {
         err = AudioSessionInitialize(NULL, NULL, sAudioSessionInterruptionCallback, NULL);
@@ -241,6 +243,7 @@ static int audioqueue_init(const char *param, int *speed, int *fragsize, int *fr
 		if (err)
 			fprintf(stderr, "WARNING: AudioSessionSetProperty (AudioCategory) err %ld\n", (int)err);
 	}
+#endif
 
     sStreamFormat.mFormatID = kAudioFormatLinearPCM;
     sStreamFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
@@ -287,10 +290,11 @@ static int audioqueue_init(const char *param, int *speed, int *fragsize, int *fr
     err = AudioQueueSetParameter(sQueue, kAudioQueueParam_Volume, 1.0f);
     if (err) fprintf(stderr, "AudioQueueSetParameter err %ld\n", (int)err);
     
+#if TARGET_OS_IOS
     // register property change callback
     err = AudioQueueAddPropertyListener(sQueue, kAudioQueueProperty_IsRunning, sAudioQueuePropertyChangeCallback, NULL);
     if (err) fprintf(stderr, "AudioQueueAddPropertyListener err %ld\n", (int)err);
-    
+#endif
     // launch audio queues
     err = AudioQueueStart(sQueue, NULL);
     if (err) fprintf(stderr, "AudioQueueStart err %ld\n", (int)err);
@@ -347,10 +351,12 @@ static void audioqueue_close(void)
     AudioQueueDispose(sQueue, true);
 	if (err) fprintf(stderr, "AudioQueueDispose err %ld\n", (int)err);
 
+#if TARGET_OS_IOS
 	err = AudioSessionSetActive(false);
 	if (err)
 		fprintf(stderr, "WARNING: AudioSessionSetActive err %d\n", (int)err);
-
+#endif
+    
     lib_free(soundbuffer);
     lib_free(silence);
 }

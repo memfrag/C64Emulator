@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		5A636EBC5844E751693361BD /* Pods_C64Emulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FE2EBD513C21E803CC0B02 /* Pods_C64Emulator.framework */; };
+		5B6B367E1F4384EE00854DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B367D1F4384EE00854DAD /* AppDelegate.swift */; };
+		5B6B36801F4384EE00854DAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B367F1F4384EE00854DAD /* ViewController.swift */; };
+		5B6B36831F4384EE00854DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B36811F4384EE00854DAD /* Main.storyboard */; };
+		5B6B36851F4384EE00854DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B36841F4384EE00854DAD /* Assets.xcassets */; };
+		5B6B36901F43852B00854DAD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B368F1F43852B00854DAD /* libc++.tbd */; };
+		5B6B36921F43853700854DAD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B36911F43853700854DAD /* libz.tbd */; };
+		5B6B36941F43854700854DAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B36931F43854700854DAD /* AudioToolbox.framework */; };
+		5B6B36961F43855300854DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B36951F43855300854DAD /* UIKit.framework */; };
+		5B6B36981F43855A00854DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B36971F43855A00854DAD /* Foundation.framework */; };
+		5B6B36991F43858600854DAD /* games.db in Resources */ = {isa = PBXBuildFile; fileRef = A14115FC1D5B9988007A1A55 /* games.db */; };
+		5B6B369A1F43858800854DAD /* crt_shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A14115E41D5B2491007A1A55 /* crt_shader.fsh */; };
+		5B6B369B1F43858B00854DAD /* crt_shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A14115E51D5B2491007A1A55 /* crt_shader.vsh */; };
+		5B6B369C1F43858D00854DAD /* ROM in Resources */ = {isa = PBXBuildFile; fileRef = A14115E61D5B2491007A1A55 /* ROM */; };
+		5B6B369D1F4385EE00854DAD /* D64Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A14115F21D5B36E2007A1A55 /* D64Image.m */; };
+		5B6B369E1F4385F500854DAD /* diskimage.c in Sources */ = {isa = PBXBuildFile; fileRef = A14115EE1D5B3513007A1A55 /* diskimage.c */; };
+		5B6B36A01F43860500854DAD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D77E21E224289000C452F /* StringExtensions.swift */; };
+		5B6B36A31F438ABA00854DAD /* TVEmulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B36A21F438ABA00854DAD /* TVEmulatorViewController.swift */; };
+		5B6B36A41F438D9900854DAD /* libtv64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6B36891F4384EE00854DAD /* libtv64.a */; };
+		5B6B36AB1F44E0B800854DAD /* Games in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B36AA1F44E0B800854DAD /* Games */; };
+		5B6B36AD1F44E55800854DAD /* C64Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B36AC1F44E55800854DAD /* C64Joystick.swift */; };
+		5B6B36AF1F44F0C400854DAD /* GameControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B36AE1F44F0C400854DAD /* GameControllerManager.swift */; };
 		A10D77E31E224289000C452F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D77E21E224289000C452F /* StringExtensions.swift */; };
 		A10D77E51E225493000C452F /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D77E41E225493000C452F /* DiskManager.swift */; };
 		A121EFB81D5F4F71006DA18F /* EmulatorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121EFB71D5F4F71006DA18F /* EmulatorSettingsViewController.swift */; };
@@ -43,6 +64,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B6B36881F4384EE00854DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14115C11D5B1966007A1A55 /* libx64.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5B6B332D1F437C6C00854DAD;
+			remoteInfo = tv64;
+		};
+		5B6B368D1F43851600854DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14115C11D5B1966007A1A55 /* libx64.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B6B332C1F437C6C00854DAD;
+			remoteInfo = tv64;
+		};
 		A14115CA1D5B196B007A1A55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A14115C11D5B1966007A1A55 /* libx64.xcodeproj */;
@@ -62,6 +97,22 @@
 /* Begin PBXFileReference section */
 		36FE2EBD513C21E803CC0B02 /* Pods_C64Emulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C64Emulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEF8A9CFB95DB90A8D7C4C /* Pods-C64Emulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C64Emulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-C64Emulator/Pods-C64Emulator.debug.xcconfig"; sourceTree = "<group>"; };
+		5B6B367B1F4384EE00854DAD /* TV64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV64.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6B367D1F4384EE00854DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B6B367F1F4384EE00854DAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B6B36821F4384EE00854DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B6B36841F4384EE00854DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B6B36861F4384EE00854DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6B368F1F43852B00854DAD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		5B6B36911F43853700854DAD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		5B6B36931F43854700854DAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		5B6B36951F43855300854DAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B6B36971F43855A00854DAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B6B36A11F43865D00854DAD /* C64Emulator-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C64Emulator-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B6B36A21F438ABA00854DAD /* TVEmulatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVEmulatorViewController.swift; sourceTree = "<group>"; };
+		5B6B36AA1F44E0B800854DAD /* Games */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Games; sourceTree = "<group>"; };
+		5B6B36AC1F44E55800854DAD /* C64Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C64Joystick.swift; sourceTree = "<group>"; };
+		5B6B36AE1F44F0C400854DAD /* GameControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerManager.swift; sourceTree = "<group>"; };
 		A10D77E21E224289000C452F /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A10D77E41E225493000C452F /* DiskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
 		A121EFB71D5F4F71006DA18F /* EmulatorSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmulatorSettingsViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +155,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B6B36781F4384EE00854DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6B36A41F438D9900854DAD /* libtv64.a in Frameworks */,
+				5B6B36981F43855A00854DAD /* Foundation.framework in Frameworks */,
+				5B6B36961F43855300854DAD /* UIKit.framework in Frameworks */,
+				5B6B36941F43854700854DAD /* AudioToolbox.framework in Frameworks */,
+				5B6B36921F43853700854DAD /* libz.tbd in Frameworks */,
+				5B6B36901F43852B00854DAD /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A14115A31D5B18F3007A1A55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +186,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B6B367C1F4384EE00854DAD /* TV64 */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B36AA1F44E0B800854DAD /* Games */,
+				5B6B367D1F4384EE00854DAD /* AppDelegate.swift */,
+				5B6B367F1F4384EE00854DAD /* ViewController.swift */,
+				5B6B36A21F438ABA00854DAD /* TVEmulatorViewController.swift */,
+				5B6B36AE1F44F0C400854DAD /* GameControllerManager.swift */,
+				5B6B36811F4384EE00854DAD /* Main.storyboard */,
+				5B6B36841F4384EE00854DAD /* Assets.xcassets */,
+				5B6B36861F4384EE00854DAD /* Info.plist */,
+				5B6B36A11F43865D00854DAD /* C64Emulator-Bridging-Header.h */,
+				5B6B36AC1F44E55800854DAD /* C64Joystick.swift */,
+			);
+			path = TV64;
+			sourceTree = "<group>";
+		};
 		7EEF711B63A20B0B16B0FAB6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +218,7 @@
 				A14115A81D5B18F3007A1A55 /* C64Emulator */,
 				A14115E31D5B2475007A1A55 /* Resources */,
 				A14115C11D5B1966007A1A55 /* libx64.xcodeproj */,
+				5B6B367C1F4384EE00854DAD /* TV64 */,
 				A14115A71D5B18F3007A1A55 /* Products */,
 				A14115D51D5B2138007A1A55 /* Frameworks */,
 				7EEF711B63A20B0B16B0FAB6 /* Pods */,
@@ -147,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				A14115A61D5B18F3007A1A55 /* C64Emulator.app */,
+				5B6B367B1F4384EE00854DAD /* TV64.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				A14115CB1D5B196B007A1A55 /* liblibx64.a */,
+				5B6B36891F4384EE00854DAD /* libtv64.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +277,11 @@
 		A14115D51D5B2138007A1A55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B6B36971F43855A00854DAD /* Foundation.framework */,
+				5B6B36951F43855300854DAD /* UIKit.framework */,
+				5B6B36931F43854700854DAD /* AudioToolbox.framework */,
+				5B6B36911F43853700854DAD /* libz.tbd */,
+				5B6B368F1F43852B00854DAD /* libc++.tbd */,
 				A14115FD1D5B9BFB007A1A55 /* libsqlite3.tbd */,
 				A14115DE1D5B228E007A1A55 /* libc++.tbd */,
 				A14115DC1D5B218D007A1A55 /* libz.tbd */,
@@ -229,6 +318,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B6B367A1F4384EE00854DAD /* TV64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B6B368A1F4384EE00854DAD /* Build configuration list for PBXNativeTarget "TV64" */;
+			buildPhases = (
+				5B6B36771F4384EE00854DAD /* Sources */,
+				5B6B36781F4384EE00854DAD /* Frameworks */,
+				5B6B36791F4384EE00854DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B6B368E1F43851600854DAD /* PBXTargetDependency */,
+			);
+			name = TV64;
+			productName = TV64;
+			productReference = 5B6B367B1F4384EE00854DAD /* TV64.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A14115A51D5B18F3007A1A55 /* C64Emulator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A14115B81D5B18F3007A1A55 /* Build configuration list for PBXNativeTarget "C64Emulator" */;
@@ -256,13 +363,18 @@
 		A141159E1D5B18F3007A1A55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Andy Qua";
 				TargetAttributes = {
+					5B6B367A1F4384EE00854DAD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CQXRBQKG85;
+						ProvisioningStyle = Automatic;
+					};
 					A14115A51D5B18F3007A1A55 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = A4ZM73UFF5;
+						DevelopmentTeam = CQXRBQKG85;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -288,11 +400,19 @@
 			projectRoot = "";
 			targets = (
 				A14115A51D5B18F3007A1A55 /* C64Emulator */,
+				5B6B367A1F4384EE00854DAD /* TV64 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		5B6B36891F4384EE00854DAD /* libtv64.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtv64.a;
+			remoteRef = 5B6B36881F4384EE00854DAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A14115CB1D5B196B007A1A55 /* liblibx64.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -303,6 +423,20 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B6B36791F4384EE00854DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6B369A1F43858800854DAD /* crt_shader.fsh in Resources */,
+				5B6B36991F43858600854DAD /* games.db in Resources */,
+				5B6B36851F4384EE00854DAD /* Assets.xcassets in Resources */,
+				5B6B369C1F43858D00854DAD /* ROM in Resources */,
+				5B6B36AB1F44E0B800854DAD /* Games in Resources */,
+				5B6B369B1F43858B00854DAD /* crt_shader.vsh in Resources */,
+				5B6B36831F4384EE00854DAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A14115A41D5B18F3007A1A55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,9 +460,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-C64Emulator/Pods-C64Emulator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,18 +495,36 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-C64Emulator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B6B36771F4384EE00854DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6B36A01F43860500854DAD /* StringExtensions.swift in Sources */,
+				5B6B369D1F4385EE00854DAD /* D64Image.m in Sources */,
+				5B6B36801F4384EE00854DAD /* ViewController.swift in Sources */,
+				5B6B36A31F438ABA00854DAD /* TVEmulatorViewController.swift in Sources */,
+				5B6B36AD1F44E55800854DAD /* C64Joystick.swift in Sources */,
+				5B6B369E1F4385F500854DAD /* diskimage.c in Sources */,
+				5B6B367E1F4384EE00854DAD /* AppDelegate.swift in Sources */,
+				5B6B36AF1F44F0C400854DAD /* GameControllerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A14115A21D5B18F3007A1A55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +553,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B6B368E1F43851600854DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tv64;
+			targetProxy = 5B6B368D1F43851600854DAD /* PBXContainerItemProxy */;
+		};
 		A14115CD1D5B1983007A1A55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = libx64;
@@ -404,6 +566,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5B6B36811F4384EE00854DAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B6B36821F4384EE00854DAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		A14115AD1D5B18F3007A1A55 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -423,6 +593,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B6B368B1F4384EE00854DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = CQXRBQKG85;
+				INFOPLIST_FILE = TV64/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.memfrag.TV64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TV64/C64Emulator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				USER_HEADER_SEARCH_PATHS = "../C64Emulator/libx64/vice/src ../C64Emulator/libx64/vice/src/c64 ../C64Emulator/libx64/vice/src/sid ../C64Emulator/libx64/vice/src/vicii ../C64Emulator/libx64/vice/src/arch/unix/ios/cocoa_touch ../C64Emulator/libx64/vice/src/arch/unix/ios ../C64Emulator/libx64/vice/src/arch/unix ../C64Emulator/libx64/vice/src/c64/cart ../C64Emulator/libx64/vice/src/drive ../C64Emulator/libx64/vice/src/c64exp ../C64Emulator/libx64/vice/src/video ../C64Emulator/libx64/vice/src/userport ../C64Emulator/libx64/vice/src/tape ../C64Emulator/libx64/vice/src/raster ../C64Emulator/libx64/vice/src/viciisc ../C64Emulator/C64Emulator/**";
+			};
+			name = Debug;
+		};
+		5B6B368C1F4384EE00854DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = CQXRBQKG85;
+				INFOPLIST_FILE = TV64/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.memfrag.TV64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TV64/C64Emulator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				USER_HEADER_SEARCH_PATHS = "../C64Emulator/libx64/vice/src ../C64Emulator/libx64/vice/src/c64 ../C64Emulator/libx64/vice/src/sid ../C64Emulator/libx64/vice/src/vicii ../C64Emulator/libx64/vice/src/arch/unix/ios/cocoa_touch ../C64Emulator/libx64/vice/src/arch/unix/ios ../C64Emulator/libx64/vice/src/arch/unix ../C64Emulator/libx64/vice/src/c64/cart ../C64Emulator/libx64/vice/src/drive ../C64Emulator/libx64/vice/src/c64exp ../C64Emulator/libx64/vice/src/video ../C64Emulator/libx64/vice/src/userport ../C64Emulator/libx64/vice/src/tape ../C64Emulator/libx64/vice/src/raster ../C64Emulator/libx64/vice/src/viciisc ../C64Emulator/C64Emulator/**";
+			};
+			name = Release;
+		};
 		A14115B61D5B18F3007A1A55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,7 +738,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				DEVELOPMENT_TEAM = CQXRBQKG85;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = C64Emulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -551,7 +761,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				DEVELOPMENT_TEAM = CQXRBQKG85;
 				INFOPLIST_FILE = C64Emulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andyqua.C64Emulator;
@@ -565,6 +775,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B6B368A1F4384EE00854DAD /* Build configuration list for PBXNativeTarget "TV64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B6B368B1F4384EE00854DAD /* Debug */,
+				5B6B368C1F4384EE00854DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A14115A11D5B18F3007A1A55 /* Build configuration list for PBXProject "C64Emulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
